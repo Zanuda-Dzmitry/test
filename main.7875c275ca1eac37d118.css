@@ -1,0 +1,136 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
+  \*************************************************************************************************************/
+body {
+  background-color: rgb(201, 237, 243);
+}
+
+.form {
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 20px 30px;
+  position: relative;
+  max-width: 280px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 73px);
+  grid-template-rows: repeat(4, 30px);
+  row-gap: 45px;
+  background-color: rgb(232, 202, 146);
+  grid-template-areas: "title title title" "number number number" "date date back" "email email email" "btn btn ...";
+}
+.form .form__title {
+  grid-area: title;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form .form__error-date,
+.form .form__error-back,
+.form .form__error-email,
+.form .form__error-number {
+  color: red;
+  overflow: hidden;
+}
+.form .error {
+  overflow: visible;
+}
+.form .form__wrap-input-number {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-area: number;
+}
+.form .form__wrap-input-number .form__card-number {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 10px 5px 10px 5px;
+  transition: outline 0.3s;
+}
+.form .form__wrap-input-number .form__card-number:focus {
+  outline: 2px solid rgb(17, 66, 229);
+}
+.form .form__wrap-input-number .form__img {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  right: 10px;
+  top: 20px;
+}
+.form .form__wrap-input-number .form__img img {
+  width: 100%;
+  height: 100%;
+}
+.form .form__wrap-input-date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-area: date;
+}
+.form .form__wrap-input-date .form__card-date {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 10px 5px 10px 5px;
+  width: 60px;
+  transition: outline 0.3s;
+}
+.form .form__wrap-input-date .form__card-date:focus {
+  outline: 2px solid rgb(17, 66, 229);
+}
+.form .form__wrap-input-back {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-area: back;
+}
+.form .form__wrap-input-back .form__card-back {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 10px 5px 10px 5px;
+  transition: outline 0.3s;
+}
+.form .form__wrap-input-back .form__card-back:focus {
+  outline: 2px solid rgb(17, 66, 229);
+}
+.form .form__wrap-input-email {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-area: email;
+}
+.form .form__wrap-input-email .form__email {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 10px 5px 10px 5px;
+  transition: outline 0.3s;
+}
+.form .form__wrap-input-email .form__email:focus {
+  outline: 2px solid rgb(17, 66, 229);
+}
+.form .form__btn {
+  border: none;
+  background: rgb(56, 159, 227);
+  border-radius: 5px;
+  padding: 10px 15px;
+  grid-area: btn;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  transition: background 0.3s;
+}
+.form .form__btn:hover {
+  background: rgb(17, 66, 229);
+}
+.form .form__btn:focus {
+  background: rgb(56, 159, 227);
+  outline: 2px solid rgb(17, 66, 229);
+}
